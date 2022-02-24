@@ -1,7 +1,760 @@
-2022-02-24 01:56:58,566 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
-2022-02-24 01:56:58,616 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
-2022-02-24 01:56:58,860 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
-2022-02-24 01:56:58,907 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
-2022-02-24 01:56:59,167 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
-2022-02-24 01:56:59,219 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
-2022-02-24 01:56:59,462 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 01:58:56,798 DEBUG scheduler Queued events for site site1.local
+2022-02-24 01:59:57,065 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:00:57,317 INFO scheduler Scheduled Job Start: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for site1.local
+2022-02-24 02:00:57,757 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:00:57,789 INFO scheduler Scheduled Job Complete: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for site1.local
+2022-02-24 02:00:57,873 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.woocommerce_settings.woocommerce_settings.sync_woocommerce for site1.local
+2022-02-24 02:00:58,499 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.woocommerce_settings.woocommerce_settings.sync_woocommerce for site1.local
+2022-02-24 02:00:58,579 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for site1.local
+2022-02-24 02:00:59,184 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for site1.local
+2022-02-24 02:00:59,264 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.update_grand_total for site1.local
+2022-02-24 02:00:59,998 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.update_grand_total for site1.local
+2022-02-24 02:01:00,063 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for site1.local
+2022-02-24 02:01:00,425 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for site1.local
+2022-02-24 02:01:00,492 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.collect_project_status for site1.local
+2022-02-24 02:01:00,964 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.collect_project_status for site1.local
+2022-02-24 02:01:01,026 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.hourly_reminder for site1.local
+2022-02-24 02:01:01,450 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.hourly_reminder for site1.local
+2022-02-24 02:01:01,526 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for site1.local
+2022-02-24 02:01:02,287 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for site1.local
+2022-02-24 02:01:02,370 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for site1.local
+2022-02-24 02:01:02,825 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for site1.local
+2022-02-24 02:01:02,908 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.process_all for site1.local
+2022-02-24 02:01:03,535 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.process_all for site1.local
+2022-02-24 02:01:03,608 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for site1.local
+2022-02-24 02:01:04,050 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for site1.local
+2022-02-24 02:01:04,141 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:01:04,444 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:01:04,514 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:01:04,895 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:01:04,967 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:01:05,347 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:01:05,419 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:01:05,897 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:01:06,000 INFO scheduler Scheduled Job Start: erpnext.utilities.doctype.video.video.update_youtube_data for site1.local
+2022-02-24 02:01:06,630 INFO scheduler Scheduled Job Failed: erpnext.utilities.doctype.video.video.update_youtube_data for site1.local
+2022-02-24 02:01:06,722 INFO scheduler Scheduled Job Start: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for site1.local
+2022-02-24 02:01:07,282 INFO scheduler Scheduled Job Complete: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for site1.local
+2022-02-24 02:01:07,367 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_hourly_updates for site1.local
+2022-02-24 02:01:07,697 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_hourly_updates for site1.local
+2022-02-24 02:01:07,774 INFO scheduler Scheduled Job Start: frappe.deferred_insert.save_to_db for site1.local
+2022-02-24 02:01:08,762 INFO scheduler Scheduled Job Complete: frappe.deferred_insert.save_to_db for site1.local
+2022-02-24 02:01:08,837 INFO scheduler Scheduled Job Start: frappe.limits.update_site_usage for site1.local
+2022-02-24 02:01:09,264 INFO scheduler Scheduled Job Complete: frappe.limits.update_site_usage for site1.local
+2022-02-24 02:01:09,329 INFO scheduler Scheduled Job Start: frappe.limits.update_space_usage for site1.local
+2022-02-24 02:01:09,680 INFO scheduler Scheduled Job Complete: frappe.limits.update_space_usage for site1.local
+2022-02-24 02:01:09,748 INFO scheduler Scheduled Job Start: frappe.desk.page.backups.backups.delete_downloadable_backups for site1.local
+2022-02-24 02:01:10,153 INFO scheduler Scheduled Job Complete: frappe.desk.page.backups.backups.delete_downloadable_backups for site1.local
+2022-02-24 02:01:10,237 INFO scheduler Scheduled Job Start: frappe.utils.error.collect_error_snapshots for site1.local
+2022-02-24 02:01:10,663 INFO scheduler Scheduled Job Complete: frappe.utils.error.collect_error_snapshots for site1.local
+2022-02-24 02:01:10,728 INFO scheduler Scheduled Job Start: frappe.model.utils.user_settings.sync_user_settings for site1.local
+2022-02-24 02:01:11,169 INFO scheduler Scheduled Job Complete: frappe.model.utils.user_settings.sync_user_settings for site1.local
+2022-02-24 02:01:11,236 INFO scheduler Scheduled Job Start: frappe.model.utils.link_count.update_link_count for site1.local
+2022-02-24 02:01:11,592 INFO scheduler Scheduled Job Complete: frappe.model.utils.link_count.update_link_count for site1.local
+2022-02-24 02:01:11,671 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:01:12,020 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:01:12,075 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:01:12,385 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:01:12,445 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:01:12,705 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:01:12,774 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:01:13,136 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:01:13,196 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:01:13,543 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:01:13,613 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:01:14,035 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:01:14,102 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:01:14,481 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:01:14,549 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 02:01:14,875 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 02:01:14,935 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 02:01:15,284 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 02:01:15,342 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 02:01:15,703 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 02:01:58,002 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:02:58,273 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:03:58,535 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:04:58,803 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:04:58,872 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:04:59,069 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:04:59,134 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:04:59,493 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:04:59,559 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:04:59,832 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:04:59,881 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:05:00,291 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:05:00,354 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:05:00,669 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:05:00,719 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:05:00,950 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:05:01,003 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:05:01,317 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:05:01,384 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:05:01,766 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:05:01,824 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:05:02,187 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:05:02,253 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:05:02,710 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:05:02,767 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:05:03,052 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:05:59,205 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:06:59,489 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:07:59,704 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:08:59,950 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:09:00,085 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:09:00,265 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:09:00,315 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:09:00,574 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:09:00,626 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:09:00,863 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:09:00,911 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:09:01,252 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:09:01,330 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:09:01,704 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:09:01,826 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:09:02,345 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:09:02,415 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:09:02,753 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:09:02,825 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:09:03,206 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:09:03,279 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:09:03,683 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:09:03,751 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:09:04,150 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:09:04,208 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:09:04,502 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:10:00,295 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:11:00,557 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:12:00,812 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:12:00,926 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:12:01,091 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:12:01,148 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:12:01,407 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:12:01,468 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:12:01,806 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:12:01,877 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:12:02,357 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:12:02,421 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:12:02,713 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:12:02,765 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:12:03,086 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:12:03,150 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:12:03,476 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:12:03,541 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:12:03,882 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:12:03,956 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:12:04,253 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:12:04,318 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:12:04,714 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:12:04,765 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:12:05,022 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:13:01,216 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:14:01,559 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:15:02,094 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:15:02,136 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 02:15:02,539 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 02:15:02,612 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 02:15:03,082 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 02:15:03,163 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 02:15:03,694 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 02:16:02,363 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:16:02,530 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:16:02,757 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:16:02,826 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:16:03,176 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:16:03,246 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:16:03,650 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:16:03,733 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:16:04,224 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:16:04,297 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:16:04,604 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:16:04,663 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:16:04,929 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:16:04,995 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:16:05,320 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:16:05,376 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:16:05,686 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:16:05,754 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:16:06,089 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:16:06,155 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:16:06,579 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:16:06,652 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:16:07,030 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:17:02,781 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:18:03,079 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:19:03,353 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:20:03,585 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:20:03,717 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:20:03,973 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:20:04,030 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:20:04,286 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:20:04,333 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:20:04,606 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:20:04,670 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:20:04,989 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:20:05,042 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:20:05,263 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:20:05,321 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:20:05,678 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:20:05,741 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:20:06,102 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:20:06,155 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:20:06,417 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:20:06,472 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:20:06,761 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:20:06,811 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:20:07,123 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:20:07,177 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:20:07,441 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:21:04,046 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:22:04,366 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:23:04,670 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:24:04,878 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:24:04,965 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:24:05,144 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:24:05,201 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:24:05,465 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:24:05,509 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:24:05,746 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:24:05,794 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:24:06,146 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:24:06,216 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:24:06,470 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:24:06,535 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:24:06,845 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:24:06,900 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:24:07,233 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:24:07,283 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:24:07,558 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:24:07,611 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:24:07,867 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:24:07,918 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:24:08,238 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:24:08,283 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:24:08,526 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:25:05,312 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:26:05,654 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:27:05,947 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:28:06,172 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:28:06,240 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:28:06,423 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:28:06,472 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:28:06,698 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:28:06,745 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:28:06,968 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:28:07,018 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:28:07,326 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:28:07,376 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:28:07,596 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:28:07,655 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:28:07,903 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:28:07,959 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:28:08,254 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:28:08,299 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:28:08,539 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:28:08,591 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:28:08,850 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:28:08,896 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:28:09,157 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:28:09,204 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:28:09,452 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:29:06,477 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:30:06,758 INFO scheduler Scheduled Job Start: erpnext.utilities.doctype.video.video.update_youtube_data for site1.local
+2022-02-24 02:30:06,856 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:30:07,306 INFO scheduler Scheduled Job Failed: erpnext.utilities.doctype.video.video.update_youtube_data for site1.local
+2022-02-24 02:30:07,387 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 02:30:07,830 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 02:30:07,898 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 02:30:08,287 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 02:30:08,364 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 02:30:08,755 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 02:31:07,187 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:32:07,539 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:32:07,667 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:32:07,887 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:32:07,954 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:32:08,330 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:32:08,403 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:32:08,766 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:32:08,832 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:32:09,162 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:32:09,215 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:32:09,467 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:32:09,522 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:32:09,807 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:32:09,871 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:32:10,231 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:32:10,298 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:32:10,647 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:32:10,701 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:32:10,987 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:32:11,036 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:32:11,319 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:32:11,382 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:32:11,753 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:33:07,965 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:34:08,217 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:35:08,524 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:36:08,781 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:36:08,898 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:36:09,082 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:36:09,157 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:36:09,502 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:36:09,575 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:36:09,941 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:36:10,004 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:36:10,455 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:36:10,514 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:36:10,754 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:36:10,814 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:36:11,180 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:36:11,248 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:36:11,589 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:36:11,658 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:36:11,962 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:36:12,010 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:36:12,291 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:36:12,355 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:36:12,733 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:36:12,786 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:36:13,041 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:37:09,235 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:38:09,544 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:39:09,880 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:40:10,110 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:40:10,247 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:40:10,443 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:40:10,502 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:40:10,869 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:40:10,935 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:40:11,270 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:40:11,324 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:40:11,695 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:40:11,766 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:40:12,034 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:40:12,087 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:40:12,338 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:40:12,390 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:40:12,637 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:40:12,695 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:40:12,974 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:40:13,031 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:40:13,429 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:40:13,495 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:40:13,892 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:40:13,942 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:40:14,196 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:41:10,588 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:42:10,920 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:43:11,192 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:44:11,425 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:44:11,504 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:44:11,661 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:44:11,707 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:44:11,944 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:44:12,006 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:44:12,361 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:44:12,427 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:44:12,735 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:44:12,793 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:44:13,022 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:44:13,087 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:44:13,390 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:44:13,441 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:44:13,677 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:44:13,743 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:44:14,020 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:44:14,068 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:44:14,336 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:44:14,403 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:44:14,762 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:44:14,824 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:44:15,165 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:45:11,831 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:45:11,871 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 02:45:12,277 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 02:45:12,336 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 02:45:12,779 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 02:45:12,851 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 02:45:13,161 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 02:46:12,107 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:47:12,435 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:48:12,694 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:48:12,780 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:48:12,982 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:48:13,045 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:48:13,294 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:48:13,338 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:48:13,563 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:48:13,611 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:48:13,910 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:48:13,956 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:48:14,173 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:48:14,219 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:48:14,513 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:48:14,562 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:48:14,778 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:48:14,838 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:48:15,076 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:48:15,138 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:48:15,501 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:48:15,553 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:48:15,819 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:48:15,867 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:48:16,098 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:49:13,097 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:50:13,420 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:51:13,685 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:52:13,897 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:52:13,981 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:52:14,141 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:52:14,188 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:52:14,413 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:52:14,458 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:52:14,672 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:52:14,716 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:52:14,999 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:52:15,049 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:52:15,268 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:52:15,311 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:52:15,522 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:52:15,568 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:52:15,783 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:52:15,838 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:52:16,064 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:52:16,107 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:52:16,357 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:52:16,403 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:52:16,667 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:52:16,723 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:52:16,973 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:53:14,262 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:54:14,495 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:55:14,792 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:56:15,044 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:56:15,151 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:56:15,367 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 02:56:15,419 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:56:15,680 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 02:56:15,730 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:56:15,960 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 02:56:16,014 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:56:16,333 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 02:56:16,381 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 02:56:16,618 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 02:56:16,684 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:56:17,036 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 02:56:17,097 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:56:17,330 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 02:56:17,380 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:56:17,613 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 02:56:17,662 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:56:17,939 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 02:56:18,001 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:56:18,325 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 02:56:18,380 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 02:56:18,749 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 02:57:15,364 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:58:15,584 DEBUG scheduler Queued events for site site1.local
+2022-02-24 02:59:15,866 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:00:16,083 INFO scheduler Scheduled Job Start: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for site1.local
+2022-02-24 03:00:16,499 INFO scheduler Scheduled Job Complete: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for site1.local
+2022-02-24 03:00:16,503 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:00:16,564 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.woocommerce_settings.woocommerce_settings.sync_woocommerce for site1.local
+2022-02-24 03:00:17,026 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.woocommerce_settings.woocommerce_settings.sync_woocommerce for site1.local
+2022-02-24 03:00:17,084 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for site1.local
+2022-02-24 03:00:17,562 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for site1.local
+2022-02-24 03:00:17,626 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.update_grand_total for site1.local
+2022-02-24 03:00:18,138 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.update_grand_total for site1.local
+2022-02-24 03:00:18,201 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for site1.local
+2022-02-24 03:00:18,483 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for site1.local
+2022-02-24 03:00:18,558 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.collect_project_status for site1.local
+2022-02-24 03:00:19,076 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.collect_project_status for site1.local
+2022-02-24 03:00:19,140 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.hourly_reminder for site1.local
+2022-02-24 03:00:19,579 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.hourly_reminder for site1.local
+2022-02-24 03:00:19,648 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for site1.local
+2022-02-24 03:00:20,069 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for site1.local
+2022-02-24 03:00:20,140 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for site1.local
+2022-02-24 03:00:20,436 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for site1.local
+2022-02-24 03:00:20,493 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.process_all for site1.local
+2022-02-24 03:00:21,055 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.process_all for site1.local
+2022-02-24 03:00:21,130 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for site1.local
+2022-02-24 03:00:21,554 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for site1.local
+2022-02-24 03:00:21,620 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:00:21,890 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:00:21,940 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:00:22,173 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:00:22,223 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:00:22,490 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:00:22,536 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:00:22,857 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:00:22,919 INFO scheduler Scheduled Job Start: erpnext.utilities.doctype.video.video.update_youtube_data for site1.local
+2022-02-24 03:00:23,315 INFO scheduler Scheduled Job Failed: erpnext.utilities.doctype.video.video.update_youtube_data for site1.local
+2022-02-24 03:00:23,380 INFO scheduler Scheduled Job Start: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for site1.local
+2022-02-24 03:00:23,735 INFO scheduler Scheduled Job Complete: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for site1.local
+2022-02-24 03:00:23,806 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_hourly_updates for site1.local
+2022-02-24 03:00:24,119 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_hourly_updates for site1.local
+2022-02-24 03:00:24,186 INFO scheduler Scheduled Job Start: frappe.deferred_insert.save_to_db for site1.local
+2022-02-24 03:00:24,668 INFO scheduler Scheduled Job Complete: frappe.deferred_insert.save_to_db for site1.local
+2022-02-24 03:00:24,738 INFO scheduler Scheduled Job Start: frappe.limits.update_site_usage for site1.local
+2022-02-24 03:00:25,073 INFO scheduler Scheduled Job Complete: frappe.limits.update_site_usage for site1.local
+2022-02-24 03:00:25,127 INFO scheduler Scheduled Job Start: frappe.limits.update_space_usage for site1.local
+2022-02-24 03:00:25,434 INFO scheduler Scheduled Job Complete: frappe.limits.update_space_usage for site1.local
+2022-02-24 03:00:25,491 INFO scheduler Scheduled Job Start: frappe.desk.page.backups.backups.delete_downloadable_backups for site1.local
+2022-02-24 03:00:25,907 INFO scheduler Scheduled Job Complete: frappe.desk.page.backups.backups.delete_downloadable_backups for site1.local
+2022-02-24 03:00:25,965 INFO scheduler Scheduled Job Start: frappe.utils.error.collect_error_snapshots for site1.local
+2022-02-24 03:00:26,264 INFO scheduler Scheduled Job Complete: frappe.utils.error.collect_error_snapshots for site1.local
+2022-02-24 03:00:26,334 INFO scheduler Scheduled Job Start: frappe.model.utils.user_settings.sync_user_settings for site1.local
+2022-02-24 03:00:26,650 INFO scheduler Scheduled Job Complete: frappe.model.utils.user_settings.sync_user_settings for site1.local
+2022-02-24 03:00:26,707 INFO scheduler Scheduled Job Start: frappe.model.utils.link_count.update_link_count for site1.local
+2022-02-24 03:00:27,009 INFO scheduler Scheduled Job Complete: frappe.model.utils.link_count.update_link_count for site1.local
+2022-02-24 03:00:27,067 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:00:27,309 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:00:27,357 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:00:27,584 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:00:27,633 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:00:27,892 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:00:27,938 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:00:28,205 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:00:28,273 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:00:28,652 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:00:28,705 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:00:29,001 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:00:29,052 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:00:29,341 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:00:29,397 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 03:00:29,688 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 03:00:29,745 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 03:00:30,078 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 03:00:30,138 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 03:00:30,418 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 03:01:16,767 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:02:17,031 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:03:17,282 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:04:17,500 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:04:17,577 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:04:17,756 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:04:17,815 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:04:18,081 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:04:18,128 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:04:18,353 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:04:18,400 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:04:18,685 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:04:18,751 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:04:18,984 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:04:19,031 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:04:19,305 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:04:19,359 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:04:19,584 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:04:19,631 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:04:19,876 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:04:19,931 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:04:20,201 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:04:20,255 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:04:20,606 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:04:20,662 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:04:20,903 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:05:17,889 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:06:18,149 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:07:18,466 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:08:18,789 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:08:18,888 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:08:19,129 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:08:19,180 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:08:19,484 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:08:19,547 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:08:19,917 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:08:19,967 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:08:20,314 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:08:20,363 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:08:20,590 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:08:20,640 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:08:20,930 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:08:20,977 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:08:21,208 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:08:21,257 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:08:21,558 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:08:21,617 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:08:21,923 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:08:21,977 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:08:22,280 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:08:22,330 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:08:22,564 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:09:19,130 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:10:19,383 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:11:19,681 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:12:19,911 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:12:19,994 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:12:20,161 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:12:20,206 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:12:20,438 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:12:20,486 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:12:20,718 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:12:20,768 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:12:21,052 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:12:21,098 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:12:21,325 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:12:21,375 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:12:21,613 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:12:21,658 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:12:21,878 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:12:21,921 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:12:22,145 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:12:22,189 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:12:22,473 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:12:22,521 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:12:22,790 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:12:22,839 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:12:23,075 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:13:20,273 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:14:20,529 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:15:20,881 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:15:20,921 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 03:15:21,361 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 03:15:21,422 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 03:15:21,855 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 03:15:21,922 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 03:15:22,307 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 03:16:21,081 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:16:21,172 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:16:21,350 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:16:21,400 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:16:21,691 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:16:21,738 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:16:21,973 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:16:22,027 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:16:22,412 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:16:22,474 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:16:22,714 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:16:22,760 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:16:22,991 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:16:23,038 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:16:23,256 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:16:23,302 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:16:23,526 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:16:23,572 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:16:23,831 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:16:23,885 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:16:24,175 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:16:24,240 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:16:24,475 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:17:21,412 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:18:21,585 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:19:21,838 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:20:22,076 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:20:22,212 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:20:22,325 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:20:22,374 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:20:22,601 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:20:22,646 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:20:22,876 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:20:22,929 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:20:23,245 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:20:23,291 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:20:23,537 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:20:23,587 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:20:23,847 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:20:23,900 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:20:24,165 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:20:24,216 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:20:24,488 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:20:24,532 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:20:24,770 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:20:24,818 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:20:25,089 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:20:25,136 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:20:25,363 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:21:22,468 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:22:22,679 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:23:22,907 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:24:23,146 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:24:23,208 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:24:23,416 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:24:23,462 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:24:23,704 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:24:23,759 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:24:24,025 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:24:24,072 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:24:24,354 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:24:24,409 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:24:24,626 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:24:24,688 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:24:24,964 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:24:25,012 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:24:25,233 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:24:25,283 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:24:25,522 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:24:25,570 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:24:25,820 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:24:25,869 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:24:26,150 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:24:26,210 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:24:26,497 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:25:23,453 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:26:23,674 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:27:23,922 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:28:24,169 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:28:24,240 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:28:24,534 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:28:24,601 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:28:24,837 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:28:24,885 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:28:25,123 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:28:25,173 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:28:25,469 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:28:25,527 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:28:25,766 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:28:25,830 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:28:26,084 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:28:26,129 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:28:26,348 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:28:26,396 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:28:26,670 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:28:26,735 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:28:27,022 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:28:27,088 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:28:27,367 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:28:27,421 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:28:27,650 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:29:24,459 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:30:24,706 INFO scheduler Scheduled Job Start: erpnext.utilities.doctype.video.video.update_youtube_data for site1.local
+2022-02-24 03:30:24,753 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:30:25,167 INFO scheduler Scheduled Job Failed: erpnext.utilities.doctype.video.video.update_youtube_data for site1.local
+2022-02-24 03:30:25,239 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 03:30:25,557 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for site1.local
+2022-02-24 03:30:25,616 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 03:30:25,934 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for site1.local
+2022-02-24 03:30:26,008 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 03:30:26,327 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for site1.local
+2022-02-24 03:31:25,078 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:32:25,279 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:32:25,381 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:32:25,515 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:32:25,561 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:32:25,787 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:32:25,832 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:32:26,089 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.item_booking.item_booking.clear_draft_bookings for site1.local
+2022-02-24 03:32:26,136 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:32:26,425 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for site1.local
+2022-02-24 03:32:26,477 INFO scheduler Scheduled Job Start: frappe.monitor.flush for site1.local
+2022-02-24 03:32:26,695 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for site1.local
+2022-02-24 03:32:26,740 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:32:26,971 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync_all_calendars for site1.local
+2022-02-24 03:32:27,021 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:32:27,261 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for site1.local
+2022-02-24 03:32:27,312 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:32:27,538 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for site1.local
+2022-02-24 03:32:27,585 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:32:27,826 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for site1.local
+2022-02-24 03:32:27,872 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:32:28,148 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for site1.local
+2022-02-24 03:32:28,195 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for site1.local
+2022-02-24 03:32:28,429 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for site1.local
+2022-02-24 03:33:25,674 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:34:25,902 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:35:26,213 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:36:26,448 INFO scheduler Scheduled Job Start: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:36:26,530 DEBUG scheduler Queued events for site site1.local
+2022-02-24 03:36:26,705 INFO scheduler Scheduled Job Complete: erpnext.venue.doctype.booking_credit_rule.booking_credit_rule.trigger_after_specific_time for site1.local
+2022-02-24 03:36:26,752 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
+2022-02-24 03:36:26,982 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for site1.local
