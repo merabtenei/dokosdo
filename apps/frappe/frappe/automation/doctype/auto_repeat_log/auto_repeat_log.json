@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "creation": "2020-08-16 14:50:15.660410",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "generation_date",
+  "generated_doctype",
+  "auto_repeat",
+  "column_break_4",
+  "transaction_date",
+  "generated_docname",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "generation_date",
+   "fieldtype": "Datetime",
+   "label": "Generation Date"
+  },
+  {
+   "fieldname": "generated_doctype",
+   "fieldtype": "Link",
+   "label": "Generated Document Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "auto_repeat",
+   "fieldtype": "Link",
+   "label": "Auto Repeat",
+   "options": "Auto Repeat"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date"
+  },
+  {
+   "fieldname": "generated_docname",
+   "fieldtype": "Data",
+   "label": "Generated Document Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Auto Repeat Log",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2020-10-14 09:25:48.974836",
+ "modified_by": "Administrator",
+ "module": "Automation",
+ "name": "Auto Repeat Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

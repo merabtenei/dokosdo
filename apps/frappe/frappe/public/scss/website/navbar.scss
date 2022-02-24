@@ -1,0 +1,95 @@
+.navbar {
+	background: white;
+	box-shadow: inset 0px -1px 0px $shadow-inset;
+}
+
+.navbar-search {
+	background-color: white;
+}
+
+.navbar-light {
+	background: $navbar-bg;
+}
+
+.navbar-primary {
+	background-color: var(--blue-500);
+
+	.nav-item {
+		.nav-link {
+			color: white;
+			font-weight: 400;
+		}
+	}
+
+	.navbar-search {
+		background-color: var(--blue-400);
+		width: 300px;
+		margin-right: 10px;
+		color: white;
+
+		&::placeholder {
+			color: white;
+		}
+	}
+
+
+	svg use {
+		--icon-stroke: white;
+	}
+}
+
+.navbar-brand {
+	img {
+		display: inline-block;
+		max-width: 150px;
+		max-height: 45px;
+	}
+}
+
+.navbar-cta {
+	@include media-breakpoint-up(lg) {
+		margin-left: 1rem;
+	}
+}
+
+
+.navbar.bg-dark {
+	.dropdown-menu {
+		font-size: 0.75rem;
+		background-color: $dark;
+		border-radius: 0;
+	}
+
+	.nav-link {
+		white-space: nowrap;
+		color: $light;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+
+	.nav-item {
+		padding: 0rem 1rem;
+	}
+
+	.dropdown-item {
+		color: $light;
+
+		&:hover {
+			background-color: $dark;
+			color: $primary;
+		}
+	}
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $gray-700;
+	font-size: $font-size-sm;
+	font-weight: 500;
+
+	&:hover,
+	&:focus, &.active {
+		color: $primary;
+	}
+}

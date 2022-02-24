@@ -1,0 +1,173 @@
+.v-sidebar-menu {
+	background-color: var(--fg-color);
+	& , * {
+	  box-sizing: border-box;
+	}
+	& {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		padding-bottom: 50px;
+		z-index: 999;
+		transition: 0.3s width;
+		box-shadow: 1px 0 0 0 #e6ebf1;
+		&.rtl {
+			right: 0;
+			left: inherit;
+			text-align: right;
+		}
+		& > .dodock-sidebar-list {
+			padding-top: 60px;
+			width: 100%;
+			height: 100%;
+			overflow-y: auto;
+			scrollbar-width: none;
+		}
+		& > .dodock-sidebar-list::-webkit-scrollbar {
+			display: none !important;
+		}
+		&.dodock-sidebar-collapsed > .dodock-sidebar-list {
+			width: calc(100% + 17px);
+			padding-right: 17px;
+		}
+		&.rtl > .dodock-sidebar-list {
+			direction: rtl;
+		}
+		&.dodock-sidebar-collapsed.rtl > .dodock-sidebar-list {
+			padding-right: 0px;
+			padding-left: 17px;
+			float: right;
+		}
+	}
+	& .dodock-sidebar-item {
+		position: relative;
+		& > .dodock-sidebar-link {
+			& > .dodock-sidebar-icon {
+				height: 30px;
+				line-height: 30px;
+				width: 30px;
+				text-align: center;
+				border-radius: 4px;
+				--icon-fill: white;
+			}
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		}
+	}
+	& .dodock-sidebar-link {
+		position: relative;
+		display: block;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 10px;
+		line-height: 30px;
+		text-decoration: none;
+		z-index: 20;
+		transition: 0.3s all;
+		&[disabled] {
+			opacity: 0.4;
+			pointer-events: none;
+		}
+	}
+	& .dodock-sidebar-title {
+		display: block;
+		white-space: nowrap;
+	}
+	& .dodock-sidebar-icon {
+		float: left;
+		margin-right: 10px;
+	}
+	&.rtl .dodock-sidebar-icon {
+		float: right;
+		margin-left: 10px;
+		margin-right: 0px;
+	}
+	& .collapse-btn {
+		display: block;
+		text-align: center;
+		font-style: normal;
+		font-weight: 900;
+		position: absolute;
+		height: 35px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		cursor: pointer;
+		border: none;
+		width: 100%;
+	}
+	& .down-btn {
+		&:after {
+			content: '\eb38';
+			font-family: 'unicons';
+			font-size: 1.3em;
+		}
+	}
+	& .up-btn {
+		&:after {
+			content: '\eb5d';
+			font-family: 'unicons';
+			font-size: 1.3em;
+		}
+	}
+	button:focus {
+		outline: none;
+	}
+
+	& .dodock-sidebar-link {
+		color: var(--text-color);
+	}
+	&.dodock-sidebar-default {
+		& .dodock-sidebar-link:hover {
+			color: white;
+			background-color: var(--primary-color);
+			& .dodock-sidebar-icon {
+				color: white !important;
+			}
+		}
+	}
+	& .collapse-btn {
+		color: var(--text-color);
+		background-color: var(--fg-color);
+		outline-color: var(--fg-color);
+	}
+
+	& .dodock-sidebar-divider {
+		display: block;
+		padding: 10px 10px 5px 10px;
+		text-transform: uppercase;
+		color: var(--text-secondary-color);
+		font-weight: 800;
+		line-height: 1.25em;
+		white-space: nowrap;
+
+		&:before {
+			background-color: var(--text-secondary-color);
+			content: "";
+			display: inline-block;
+			height: 3px;
+			position: relative;
+			vertical-align: middle;
+			width: 60%;
+			right: 0.5em;
+			margin-left: -50%;
+		}
+		&.collapsed:before {
+			width: 100%;
+		}
+		&.collapsed > span {
+			visibility: hidden;
+			opacity: 0;
+		}
+		& > span {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0s, opacity 0.5s linear;
+		}
+	}
+}

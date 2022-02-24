@@ -1,0 +1,47 @@
+.vgt-wrap {
+    table.vgt-table {
+        border: None;
+
+        .line-numbers,
+        .vgt-checkbox-col {
+            background: None;
+            border-right: None;
+        }
+    }
+
+    .vgt-selection-info-row {
+        border: None;
+        text-align: center;
+        background: None;
+    }
+
+    .vgt-table.striped tbody tr:nth-of-type(odd) {
+        background-color: #f8faff;
+    }
+
+    .vgt-table thead th,
+    .vgt-wrap__footer {
+        background: None;
+        color: #36414c;
+    }
+
+    .vgt-wrap__footer {
+        border: None;
+
+        .footer__row-count__label
+        .footer__row-count__select
+        .footer__navigation__info {
+            color: #36414c;
+        }
+
+        .vgt-wrap__footer .footer__navigation__page-btn .chevron.left::after,
+        .vgt-wrap__footer .footer__navigation__page-btn .chevron.right::after {
+            border-right: 6px solid #6195FF;
+        }
+    }
+}
+
+.vgt-global-search {
+    background: None;
+    border: None;
+}

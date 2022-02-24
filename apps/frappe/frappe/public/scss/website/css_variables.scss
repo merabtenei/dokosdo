@@ -1,0 +1,94 @@
+@import '../common/css_variables.scss';
+
+:root {
+	--gray-50: #{$gray-50};
+	--gray-100: #{$gray-100};
+	--gray-200: #{$gray-200};
+	--gray-300: #{$gray-300};
+	--gray-400: #{$gray-400};
+	--gray-500: #{$gray-500};
+	--gray-600: #{$gray-600};
+	--gray-700: #{$gray-700};
+	--gray-800: #{$gray-800};
+	--gray-900: #{$gray-900};
+
+	--blue-50: #{$blue-50};
+	--blue-100: #{$blue-100};
+	--blue-200: #{$blue-200};
+	--blue-300: #{$blue-300};
+	--blue-400: #{$blue-400};
+	--blue-500: #{$blue-500};
+	--blue-600: #{$blue-600};
+	--blue-700: #{$blue-700};
+	--blue-800: #{$blue-800};
+	--blue-900: #{$blue-900};
+
+	--dark-green-500: #{$dark-green-500};
+	--dark-green-50: #{$dark-green-50};
+
+	--orange-500: #{$orange-500};
+	--orange-50: #{$orange-50};
+
+	--yellow-500: #{$yellow-500};
+	--yellow-50: #{$yellow-50};
+
+	--red-500: #{$red-500};
+	--red-50: #{$red-50};
+
+	--bg-blue: var(--blue-50);
+	--bg-green: var(--dark-green-50);
+	--bg-yellow: var(--yellow-50);
+	--bg-orange: var(--orange-50);
+	--bg-red: var(--red-50);
+	--bg-gray: var(--gray-50);
+
+	--text-on-blue: var(--blue-500);
+	--text-on-green: var(--dark-green-500);
+	--text-on-yellow: var(--yellow-500);
+	--text-on-orange: var(--orange-500);
+	--text-on-red: var(--red-500);
+	--text-on-gray: var(--gray-600);
+
+	--black: #{$black};
+	--primary: #{$primary};
+	--primary-color: #{$primary};
+	--primary-light: #{$primary-light};
+	--light: #{$light};
+
+	--font-size-xs: #{$font-size-xs};
+	--font-size-sm: #{$font-size-sm};
+	--font-size-base: #{$font-size-base};
+	--font-size-lg: #{$font-size-lg};
+	--font-size-xl: #{$font-size-xl};
+	--font-size-2xl: #{$font-size-2xl};
+	--font-size-3xl: #{$font-size-3xl};
+	--font-size-4xl: #{$font-size-4xl};
+	--font-size-5xl: #{$font-size-5xl};
+	--font-size-6xl: #{$font-size-6xl};
+
+	--border-radius-xs: #{$border-radius-xs};
+	--border-radius-sm: #{$border-radius};
+	--border-radius: #{$border-radius};
+	--border-radius-md: #{$border-radius-md};
+	--border-radius-lg: #{$border-radius-lg};
+	--border-radius-xl: #{$border-radius-xl};
+
+	--shadow-base: #{$shadow-base};
+
+	--margin-xs: #{$margin-xs};
+	--margin-sm: #{$margin-xs};
+	--margin-md: #{$margin-xs};
+	--margin-lg: #{$margin-xs};
+	--margin-xl: #{$margin-xs};
+
+	--padding-xs: #{$padding-xs};
+	--padding-sm: #{$margin-xs};
+	--padding-md: #{$margin-md};
+	--padding-lg: #{$margin-lg};
+	--padding-xl: #{$margin-xl};
+	--padding-2xl: #{$margin-2xl};
+
+	--text-light: #{$text-light};
+	--text-color: #{$text-color};
+	--control-bg: #{$control-bg};
+}

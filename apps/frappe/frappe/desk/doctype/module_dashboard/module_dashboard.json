@@ -1,0 +1,65 @@
+{
+ "creation": "2019-05-14 16:56:41.034066",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "module",
+  "module_dashboard_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "module",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Module",
+   "reqd": 1
+  },
+  {
+   "fieldname": "module_dashboard_items",
+   "fieldtype": "Table",
+   "label": "Module Items",
+   "options": "Module Dashboard Items"
+  }
+ ],
+ "in_create": 1,
+ "modified": "2019-06-05 11:11:23.866992",
+ "modified_by": "Administrator",
+ "module": "Desk",
+ "name": "Module Dashboard",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "All",
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "route": "/app/Form/DocType/Module Dashboard",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

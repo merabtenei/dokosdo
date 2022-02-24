@@ -1,0 +1,84 @@
+{%- macro render_table(df, doc) -%}
+	{%- set table_meta = frappe.get_meta(df.options) -%}
+	{%- set data = doc.get(df.fieldname)[df.start:df.end] -%}
+	{%- if doc.print_templates and
+			doc.print_templates.get(df.fieldname) -%}
+		{% include doc.print_templates[df.fieldname] %}
+	{%- else -%}
+		{%- if data -%}
+		{%- set visible_columns = get_visible_columns(doc.get(df.fieldname),
+			table_meta, df) -%}
+		<div {{ fieldmeta(df) }}>
+			<table class="table table-bordered table-condensed">
+				<tbody>
+					<tr>
+						{% for tdf in visible_columns %}
+						{% if (data and not data[0].flags.compact_item_print) or tdf.fieldname in doc.get(df.fieldname)[0].flags.compact_item_fields %}
+							<td style="width: {{ get_width(tdf) }};" class="{{ get_align_class(tdf) }}" {{ fieldmeta(df) }}>
+								{{ _(tdf.label) }}</td>
+						{% endif %}
+						{% endfor %}
+					</tr>
+					{% for d in data %}
+					<tr>
+						{% for tdf in visible_columns %}
+						{% if not d.flags.compact_item_print or tdf.fieldname in doc.get(df.fieldname)[0].flags.compact_item_fields %}
+							<td class="{{ get_align_class(tdf) }}" {{ fieldmeta(df) }}>
+								<div class="value">{{ print_value(tdf, d, doc, visible_columns) }}</div></td>
+						{% endif %}
+						{% endfor %}
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		{%- endif -%}
+	{%- endif -%}
+{%- endmacro -%}
+
+{% macro fieldmeta(df) -%}
+data-fieldname="{{ df.fieldname }}" data-fieldtype="{{ df.fieldtype }}"
+{%- endmacro %}
+
+{% macro get_width(df) -%}
+	{%- if df.print_width -%}
+		{%- if df.print_width.endswith("%") -%}
+			{{ df.print_width }}
+		{%- else -%}
+			{{ df.print_width.replace("px", "") }}px
+		{%- endif -%}
+	{%- elif df.fieldtype in ("Int", "Check", "Float", "Currency") -%}{{ 80 }}px
+	{%- else -%}{{ 150 }}px{% endif -%}
+{%- endmacro %}
+
+{% macro get_align_class(df) %}
+	{%- if df.align -%}{{ "text-" + df.align }}
+	{%- elif df.fieldtype in ("Int", "Float", "Currency", "Check", "Percent") -%}{{ "text-right" }}
+	{%- else -%}{{ "" }}
+	{%- endif -%}
+{% endmacro %}
+
+{%- macro print_value(df, doc, parent_doc=None, visible_columns=None) -%}
+    {% if doc.print_templates and
+			doc.print_templates.get(df.fieldname) %}
+        {% include doc.print_templates[df.fieldname] %}
+	{% elif df.fieldtype=="Check" %}
+		<i class="{{ 'uil uil-check' if doc[df.fieldname] }}"></i>
+	{% elif df.fieldtype=="Image" %}
+		<img src="{{ doc[doc.meta.get_field(df.fieldname).options] }}"
+			class="img-responsive"
+			{%- if df.print_width %} style="width: {{ get_width(df) }};"{% endif %}>
+	{% elif df.fieldtype=="Signature" %}
+		<img src="{{ doc[df.fieldname] }}" class="signature-img img-responsive"
+			{%- if df.print_width %} style="width: {{ get_width(df) }};"{% endif %}>
+	{% elif df.fieldtype in ("Attach", "Attach Image") and doc[df.fieldname]
+		and frappe.utils.is_image(doc[df.fieldname]) %}
+		<img src="{{ doc[df.fieldname] }}" class="img-responsive"
+			{%- if df.print_width %} style="width: {{ get_width(df) }};"{% endif %}>
+	{% elif df.fieldtype=="HTML" %}
+		{{ frappe.render_template(df.options, {"doc":doc}) }}
+	{% else %}
+		{%- set parent = parent_doc or doc -%}
+		{{ doc.get_formatted(df.fieldname, parent, translated=df.translatable, absolute_value=parent.absolute_value) }}
+	{% endif %}
+{%- endmacro %}

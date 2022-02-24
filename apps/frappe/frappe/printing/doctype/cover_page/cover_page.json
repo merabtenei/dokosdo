@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:cover_page_name",
+ "creation": "2021-01-19 19:02:59.816421",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cover_page_name",
+  "cover_page"
+ ],
+ "fields": [
+  {
+   "fieldname": "cover_page_name",
+   "fieldtype": "Data",
+   "label": "Cover Page Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "cover_page",
+   "fieldtype": "Attach",
+   "label": "Cover Page",
+   "options": "restrictions: {allowed_file_types: ['pdf']}"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-01-20 11:14:16.719974",
+ "modified_by": "Administrator",
+ "module": "Printing",
+ "name": "Cover Page",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

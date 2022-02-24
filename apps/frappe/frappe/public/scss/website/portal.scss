@@ -1,0 +1,74 @@
+.page-header-section {
+	padding: 1.2rem 0;
+}
+
+.page_content,
+main {
+	height: 100%;
+}
+
+.website-list .result,
+.portal-calendar,
+#datatable,
+article {
+	padding: $padding-md;
+	@extend .frappe-card;
+}
+
+.web-list-item {
+	display: flex;
+	padding: 0.75rem 1.25rem;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border-top: 1px solid $border-color;
+
+	&:first-child {
+		border-top-left-radius: 0.25rem;
+		border-top-right-radius: 0.25rem;
+		border: None;
+	}
+
+	&:hover {
+		background-color: #f8faff;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.web-list-item {
+		padding: 0.75rem 0;
+	}
+}
+
+.more-block {
+	float: right;
+	margin: 1rem 0;
+}
+
+.list-unstyled li {
+	margin: 15px 15px 15px 0px;
+}
+
+.list-unstyled .card {
+	min-width: 18rem;
+}
+
+.mobile-sidebar .list-group-item {
+	border-bottom: None;
+	border-left: None;
+	border-right: None;
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.mobile-sidebar .list-group-item:first-child {
+	border: None;
+}
+
+.sidebar-column {
+	box-shadow:1px 0 0 0 #e6ebf1;
+	.sidebar-item a {
+		font-size:1.125rem;
+	}
+}

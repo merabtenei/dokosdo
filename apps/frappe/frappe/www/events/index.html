@@ -1,0 +1,17 @@
+{% extends "templates/web.html" %}
+
+{%- block head_include %}
+<link rel="stylesheet" href="/assets/css/website-calendar.min.css">
+{% endblock -%}
+
+{% block title %}{{ _("Events") }}{% endblock %}
+{% block header %}<h2>{{ _("Events") }}</h2>{% endblock %}
+
+{% block page_content %}
+<!-- no-cache -->
+<div id="events-calendar" class="portal-calendar"></div>
+{% endblock %}
+
+{%- block script -%}
+<script type="text/javascript" src="/assets/js/events-portal.min.js"></script>
+{% endblock %}

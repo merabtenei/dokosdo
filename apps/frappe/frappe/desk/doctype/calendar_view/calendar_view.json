@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "autoname": "Prompt",
+ "creation": "2017-10-23 13:02:10.295824",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reference_doctype",
+  "subject_field",
+  "start_date_field",
+  "end_date_field",
+  "all_day_field",
+  "column_break_5",
+  "status_field",
+  "color_field",
+  "recurrence_rule_field",
+  "secondary_status_section",
+  "secondary_status_field",
+  "secondary_status",
+  "section_break_10",
+  "first_day",
+  "daily_minimum_time",
+  "daily_maximum_time",
+  "column_break_17",
+  "display_event_time",
+  "display_event_end"
+ ],
+ "fields": [
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reference Document Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject_field",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Subject Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_date_field",
+   "fieldtype": "Select",
+   "label": "Start Date Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date_field",
+   "fieldtype": "Select",
+   "label": "End Date Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "all_day_field",
+   "fieldtype": "Select",
+   "label": "All Day Field"
+  },
+  {
+   "default": "06:00",
+   "fieldname": "daily_minimum_time",
+   "fieldtype": "Time",
+   "label": "Daily Minimum Time"
+  },
+  {
+   "default": "21:00",
+   "fieldname": "daily_maximum_time",
+   "fieldtype": "Time",
+   "label": "Daily Maximum Time"
+  },
+  {
+   "fieldname": "status_field",
+   "fieldtype": "Select",
+   "label": "Status Field"
+  },
+  {
+   "fieldname": "color_field",
+   "fieldtype": "Select",
+   "label": "Color Field"
+  },
+  {
+   "fieldname": "recurrence_rule_field",
+   "fieldtype": "Select",
+   "label": "Recurrence rule field"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "secondary_status_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.secondary_status_field",
+   "fieldname": "secondary_status",
+   "fieldtype": "Table",
+   "label": "Secondary Status",
+   "mandatory_depends_on": "eval:doc.secondary_status_field",
+   "options": "Calendar View Status"
+  },
+  {
+   "fieldname": "secondary_status_field",
+   "fieldtype": "Select",
+   "label": "Secondary Status Field"
+  },
+  {
+   "default": "Sunday",
+   "fieldname": "first_day",
+   "fieldtype": "Select",
+   "label": "First day of the week",
+   "options": "Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "display_event_time",
+   "fieldtype": "Check",
+   "label": "Display Event Time"
+  },
+  {
+   "default": "1",
+   "depends_on": "eval:doc.display_event_time == 1",
+   "fieldname": "display_event_end",
+   "fieldtype": "Check",
+   "label": "Display Event End"
+  }
+ ],
+ "links": [],
+ "modified": "2021-02-11 18:31:20.839919",
+ "modified_by": "Administrator",
+ "module": "Desk",
+ "name": "Calendar View",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

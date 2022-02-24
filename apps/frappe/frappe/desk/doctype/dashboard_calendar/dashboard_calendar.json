@@ -1,0 +1,58 @@
+{
+ "creation": "2019-05-10 13:15:19.061462",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source_document",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_document",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Document",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  }
+ ],
+ "in_create": 1,
+ "modified": "2019-06-12 10:31:06.726081",
+ "modified_by": "Administrator",
+ "module": "Desk",
+ "name": "Dashboard Calendar",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "All",
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "user",
+ "track_changes": 1
+}

@@ -1,0 +1,52 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ _("My Account") }}{% endblock %}
+{% block header %}<h2>{{ _("My Account") }}</h2>{% endblock %}
+
+{% block page_content %}
+<!-- no-cache -->
+<div class="your-account-info">
+	<div class="col-sm-4">
+		<ul class="list-unstyled">
+			<li>
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">{{ _("Reset your password") }}</h5>
+						<a href="/update-password" class="btn btn-primary">{{ _("Reset password") }}</a>
+					</div>
+				  </div>
+			</li>
+			<li>
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">{{ _("Edit your user profile") }}</h5>
+						<a href="/update-profile?name={{ user }}" class="btn btn-primary">{{ _("Edit profile") }}</a>
+					</div>
+				</div>
+			</li>
+			{% if third_party_apps %}
+			<li>
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">{{ _("Manage your third party applications") }}</h5>
+						<a href="/third_party_apps" class="btn btn-primary">{{ _("Manage applications") }}</a>
+					</div>
+				</div>
+			</li>
+			{% endif %}
+		</ul>
+	</div>
+</div>
+<div class="row d-block d-sm-none">
+	<div class="col-12">
+		<ul class="list-group mobile-sidebar">
+			{% for item in sidebar_items -%}
+				<a class="list-group-item" href="{{ item.route }}"
+					{% if item.target %}target="{{ item.target }}"{% endif %}>
+					{{ _(item.title or item.label) }}
+				</a>
+			{%- endfor %}
+		</ul>
+	</div>
+</div>
+{% endblock %}

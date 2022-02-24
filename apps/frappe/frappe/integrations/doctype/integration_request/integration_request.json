@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "creation": "2016-08-04 04:58:40.457416",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "integration_type",
+  "status",
+  "column_break_3",
+  "integration_request_service",
+  "payment_gateway_controller",
+  "section_break_6",
+  "reference_doctype",
+  "column_break_8",
+  "reference_docname",
+  "section_break_5",
+  "service_document",
+  "service_status",
+  "column_break_7",
+  "service_id",
+  "section_break_9",
+  "error",
+  "data",
+  "output"
+ ],
+ "fields": [
+  {
+   "fieldname": "integration_type",
+   "fieldtype": "Select",
+   "label": "Integration Type",
+   "options": "Request\nWebhook",
+   "read_only": 1
+  },
+  {
+   "fieldname": "integration_request_service",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Integration Request Service",
+   "read_only": 1
+  },
+  {
+   "default": "Queued",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nQueued\nPending\nAuthorized\nCompleted\nCancelled\nFailed\nNot Handled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Code",
+   "label": "Data",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "output",
+   "fieldtype": "Code",
+   "label": "Output",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "error",
+   "fieldtype": "Code",
+   "label": "Error",
+   "options": "JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "label": "Reference Document Type",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_docname",
+   "fieldtype": "Dynamic Link",
+   "label": "Reference Docname",
+   "options": "reference_doctype",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "service_document",
+   "fieldtype": "Data",
+   "label": "Service Document Type",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "service_id",
+   "fieldtype": "Data",
+   "label": "Service Document ID",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "service_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_gateway_controller",
+   "fieldtype": "Data",
+   "label": "Payment Gateway Controller",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "links": [],
+ "modified": "2020-08-06 07:56:33.456823",
+ "modified_by": "Administrator",
+ "module": "Integrations",
+ "name": "Integration Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "integration_request_service",
+ "track_changes": 1
+}

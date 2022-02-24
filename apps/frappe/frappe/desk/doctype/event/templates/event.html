@@ -1,0 +1,179 @@
+<!-- sitemap -->
+{% extends "templates/web.html" %}
+
+{% block header %}
+<h1 itemprop="headline">{{ title }}</h1>
+{% endblock %}
+
+{% block header_actions %}
+	{% if show_close_button%}
+		<button class="btn btn-primary close-btn">{{ _("Close") }}</button>
+	{% endif %}
+{% endblock %}
+
+{% block page_content %}
+	<div class="frappe-card mb-5">
+		{% if doc.image %}
+		<img class="card-img-top" src="{{ doc.image }}" alt="{{ doc.subject }}">
+		{% endif %}
+		<div class="card-body">
+			{% if not portal_print_format %}<h5 class="card-title">{{ subject or "" }}</h5>{% endif %}
+
+			{{ content }}
+
+			{% if attachments %}
+			<ul class="list-group mb-4">
+				{% for attachment in attachments %}
+				<li class="list-group-item">
+					<span><i class="uil uil-file"></i></span>
+					<a href="{{ attachment.file_url }}" target="_blank">
+						<span class="ml-1">{{ attachment.file_name }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+
+			{% if allow_registrations %}
+			<div id="registration-button" class="text-right">
+				{% if is_registered %}
+				<div class="is-registered">
+					<div class="alert alert-primary mt-5 text-center" role="alert"><span>{{ _("You are registered for this event") }}</span></div>
+					{% if allow_cancellations %}
+					<div><button class="btn btn-danger cancel-btn">{{ _("Cancel your registration") }}</button></div>
+					{% endif %}
+				</div>
+				{% endif %}
+				<div><button class="btn btn-primary register-btn">{{ _("Registration Form") }}</button></div>
+			</div>
+			<div id="registration-form" style="display: None;">
+				<hr class="my-5" />
+				<div class="registration-fields"></div>
+				<div class="text-right">
+					<div><button class="btn btn-primary data-registration">{{ _("Register") }}</button></div>
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}
+
+{% block style %}
+	<style>{{ event_style }}</style>
+	<style>
+		.frappe-control:not([data-fieldtype='MultiSelectPills']):not([data-fieldtype="Table MultiSelect"]).has-error input {
+			border: 1px solid #F9966C;;
+		}
+
+		.frappe-control:not([data-fieldtype='MultiSelectPills']):not([data-fieldtype="Table MultiSelect"]).has-error input:focus {
+			box-shadow: 0 0 0 0.2px #F9966C;;
+		}
+
+		.frappe-control[data-fieldtype='MultiSelectPills'].has-error .control-input-wrapper {
+			box-shadow: 0 0 0 0.2px #F9966C;;
+		}
+
+		.page-break {
+			border-bottom: none;
+		}
+	</style>
+{% endblock%}
+
+
+{% block script %}
+<script>
+	const init_visible_buttons = () => {
+		{% if is_registered %}
+			$(".register-btn").hide();
+		{% endif %}
+	}
+
+	const bind_close_btn = () => {
+		$(".close-btn").on("click", (e) => {
+			e.preventDefault();
+			window.location.href = "/events"
+		});
+	}
+
+	const bind_cancel_btn = () => {
+		$(".cancel-btn").on("click", (e) => {
+			e.preventDefault();
+			$(".cancel-btn").attr("disabled", true);
+			frappe.call({
+				method: "frappe.desk.doctype.event_registration.event_registration.cancel_registration",
+				args: {
+					event: "{{ doc.name }}"
+				}
+			}).then(r => {
+				$(".is-registered").hide()
+				$(".register-btn").show();
+			})
+		});
+	}
+
+	const bind_register_btn = () => {
+		const fields = {{ registration_form }};
+		$(".register-btn").on("click", (e) => {
+			e.preventDefault();
+			$("#registration-button").hide();
+			$("#registration-form").show();
+
+			form = new frappe.ui.FieldGroup({
+				fields: fields,
+				body: $(".registration-fields")[0],
+				no_submit_on_enter: true
+			});
+			form.make();
+
+			if (frappe.session.user != "Guest") {
+				frappe.call({
+					method: "frappe.desk.doctype.event_registration.event_registration.get_user_info",
+				}).then(r => {
+					if (r && r.message) {
+						form.set_values(r.message)
+					}
+				})
+			}
+
+
+			$(".data-registration").on("click", () => {
+				e.preventDefault();
+				values = form.get_values()
+				if (values) {
+					$(".data-registration").attr("disabled", true);
+					frappe.call({
+						method: "frappe.desk.doctype.event_registration.event_registration.register_to_event",
+						args: {
+							event: "{{ doc.name }}",
+							data: values
+						}
+					}).then(r => {
+						if (r&&r.message) {
+							$(".data-registration").hide()
+							$(".registration-fields").html(
+								`{{ doc.success_message or _('<div class="alert alert-success mt-5 text-center" role="alert"><span>${ __("Thank you ! You have been successfully registered") }</span></div>') }}`
+							)
+						} else {
+							$(".data-registration").attr("disabled", false);
+							frappe.msgprint(__("An error prevented your registration. Please try again or contact us."), __("Registration failed"))
+						}
+					})
+				}
+				
+			})
+		})
+	}
+
+	frappe.ready(function() {
+		init_visible_buttons()
+		bind_close_btn()
+		bind_cancel_btn()
+		bind_register_btn()
+	});
+</script>
+
+<script type="text/javascript" src="/assets/js/control.min.js"></script>
+<script type="text/javascript" src="/assets/js/moment-bundle.min.js"></script>
+<script type="text/javascript" src="/assets/frappe/js/frappe/form/formatters.js"></script>
+{% endblock %}
+

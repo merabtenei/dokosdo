@@ -1,0 +1,29 @@
+table.user-perm {
+	border-collapse: collapse;
+	width: 100%;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	tr td, tr th {
+		padding: 5px;
+		border-bottom: 1px solid var(--border-color);
+		min-width: 30px;
+		&:not(:first-child) {
+			text-align: center;
+		}
+	}
+}
+
+.unit-checkbox {
+	.label-area {
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.module-block-list .checkbox {
+	margin-bottom: var(--margin-xs);
+	font-size: var(--text-md);
+}

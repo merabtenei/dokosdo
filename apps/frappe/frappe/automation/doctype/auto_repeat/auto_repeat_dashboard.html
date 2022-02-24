@@ -1,0 +1,24 @@
+<table class="table table-bordered small" style="background-color: #fff;">
+	<thead>
+		<tr>
+			<th style="width: 20%">{{ __("Scheduled Date") }}</th>
+			<th style="width: 20%">{{ __("Status") }}</th>
+			<th style="width: 20%">{{ __("Reference Document") }}</th>
+		</tr>
+	</thead>
+
+	<tbody>
+	{% for(var i=0; i < schedule_details.length; i++) { %}
+		<tr>
+			<td> {{ frappe.datetime.str_to_user(schedule_details[i].transaction_date) }} </td>
+			{% if schedule_details[i].generated_docname %}
+			<td><span class="indicator-pill blue">{{ __("Generated") }}</span></td>
+			<td><span class="strong">{{ schedule_details[i].link }}</span></td>
+			{% else %}
+			<td><span class="indicator-pill green">{{ __("Scheduled") }}</span></td>
+			<td></td>
+			{% endif %}
+		</tr>
+	{% } %}
+	</tbody>
+</table>

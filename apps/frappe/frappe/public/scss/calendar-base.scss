@@ -1,0 +1,127 @@
+@import '~@fullcalendar/common/main.css';
+@import '~@fullcalendar/list/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import '~@fullcalendar/timegrid/main.css';
+
+.fc {
+	font-size: 1em;
+
+	.fc-toolbar.fc-header-toolbar {
+		font-size: 1em;
+	}
+
+	.fc-timegrid-axis {
+		border: none;
+	}
+
+	th.fc-col-header-cell.fc-day {
+		text-align: right;
+		padding: 10px 12px 10px 0;
+		text-transform: uppercase;
+		font-size: 12px;
+		border: none;
+	}
+
+	.fc-button,
+	.fc-button .fc-icon {
+		height: auto;
+		font-size: 0.8em;
+		outline: none;
+		line-height: inherit;
+	}
+
+	.fc-button-primary {
+		background-color: var(--control-bg);
+		color: var(--text-color);
+		border: none;
+	}
+
+	.fc-button-primary:hover {
+		background-color: #fff;
+		color: #4C5A67;
+	}
+
+	.fc-event {
+		cursor: pointer;
+	}
+
+	.fc-toolbar-title {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 1rem;
+	}
+
+	.fc-scrollgrid,
+	.fc-timegrid-slot-minor {
+		border: none;
+	}
+
+	.fc-scrollgrid-section > td,
+	.fc-scrollgrid-section-liquid > td {
+		border-right: none;
+	}
+
+	.fc-timegrid-divider {
+		padding: 0;
+	}
+
+	.fc-timegrid-slot-label:after {
+		content: "";
+		width: 3rem;
+		height: 2rem;
+		background-color:white;
+		position: absolute;
+	}
+
+	tbody>tr:first-child>td .fc-timegrid-slot-label-cushion {
+		display: none;
+	}
+
+	.fc-timegrid-slot-label-frame {
+		text-align: left;
+		display: block;
+		position: relative;
+		top: -12px;
+	}
+
+	.fc-scroller {
+		scrollbar-width: 5px;
+		scrollbar-color: #dfe8ff #fff;
+	}
+
+	.fc-scroller::-webkit-scrollbar {
+		width: 5px;
+		background-color: #fff;
+	}
+
+	.fc-scroller::-webkit-scrollbar-thumb {
+		background-color: #dfe8ff;
+	}
+
+	@media (max-width: 991px) {
+		.fc-toolbar.fc-header-toolbar,
+		.fc-toolbar-title {
+			font-size: 0.8em;
+		}
+
+		.fc-timeGridWeek-button,
+		.fc-listDay-button {
+			display: none;
+		}
+	}
+
+	.fc-now-indicator {
+		border-color: var(--primary) !important;
+	}
+	
+	.fc-now-indicator-arrow {
+		display: none !important;
+	}
+
+	.fc-today-button:disabled,
+	.fc-today-button:not(:hover) {
+		.icon {
+			--icon-stroke: white;
+		}
+	}
+}

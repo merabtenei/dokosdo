@@ -1,0 +1,148 @@
+{
+ "allow_rename": 1,
+ "autoname": "field:card_name",
+ "creation": "2019-05-24 16:22:50.230269",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "card_name",
+  "card_type",
+  "source",
+  "document_type",
+  "based_on",
+  "value_based_on",
+  "column_break_4",
+  "timespan",
+  "filters_section",
+  "filters_json",
+  "section_break_7",
+  "icon",
+  "column_break_8",
+  "color",
+  "section_break_10",
+  "last_synced_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "card_type",
+   "fieldtype": "Select",
+   "label": "Card Type",
+   "options": "Count\nSum\nAverage\nCustom"
+  },
+  {
+   "depends_on": "eval:doc.card_type==\"Custom\"",
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Card Source",
+   "options": "Dashboard Card Source"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "You can use octicons or font-awesome (v5) icons",
+   "fieldname": "icon",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Icon",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "in_list_view": 1,
+   "label": "Card Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "timespan",
+   "fieldtype": "Select",
+   "label": "Timespan",
+   "options": "Last Year\nLast Quarter\nLast Month\nLast Week\nAll Time"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "last_synced_on",
+   "fieldtype": "Datetime",
+   "label": "Last Synced On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "label": "Reference Document Type",
+   "options": "DocType"
+  },
+  {
+   "depends_on": "eval: ['Sum', 'Average'].includes(doc.card_type)",
+   "fieldname": "value_based_on",
+   "fieldtype": "Select",
+   "label": "Value Based On"
+  },
+  {
+   "fieldname": "filters_section",
+   "fieldtype": "Section Break",
+   "label": "Filters"
+  },
+  {
+   "fieldname": "filters_json",
+   "fieldtype": "Code",
+   "label": "Filters JSON",
+   "options": "JSON"
+  },
+  {
+   "depends_on": "eval:doc.card_type!=\"Custom\"",
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "label": "Time Series Based On"
+  }
+ ],
+ "modified": "2020-02-12 11:20:49.498529",
+ "modified_by": "Administrator",
+ "module": "Desk",
+ "name": "Dashboard Card",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "route": "/app/Form/DocType/Dashboard Card",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

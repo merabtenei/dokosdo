@@ -1,0 +1,353 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "EV.#####",
+ "creation": "2013-06-10 13:17:47",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "email_append_to": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "subject",
+  "event_category",
+  "event_type",
+  "color",
+  "send_reminder",
+  "column_break_4",
+  "starts_on",
+  "ends_on",
+  "status",
+  "sender",
+  "all_day",
+  "repeat_this_event",
+  "repeat",
+  "repeat_till",
+  "rrule",
+  "sync_with_google_calendar",
+  "participants",
+  "event_participants",
+  "sb_00",
+  "google_calendar",
+  "cb_00",
+  "google_calendar_id",
+  "google_calendar_event_id",
+  "section_break_8",
+  "description",
+  "image",
+  "website_section",
+  "published",
+  "allow_registrations",
+  "allow_cancellations",
+  "display_public_files",
+  "visible_for",
+  "role",
+  "section_break_30",
+  "route",
+  "portal_print_format",
+  "success_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "details",
+   "fieldtype": "Section Break",
+   "label": "Details",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "event_category",
+   "fieldtype": "Select",
+   "label": "Event Category",
+   "options": "Event\nMeeting\nCall\nSent/Received Email\nOther"
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Event Type",
+   "oldfieldname": "event_type",
+   "oldfieldtype": "Select",
+   "options": "Private\nPublic\nCancelled",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "send_reminder",
+   "fieldtype": "Check",
+   "label": "Send an email reminder in the morning"
+  },
+  {
+   "default": "0",
+   "fieldname": "repeat_this_event",
+   "fieldtype": "Check",
+   "label": "Repeat this Event"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "starts_on",
+   "fieldtype": "Datetime",
+   "label": "Starts on",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "ends_on",
+   "fieldtype": "Datetime",
+   "label": "Ends on"
+  },
+  {
+   "default": "0",
+   "fieldname": "all_day",
+   "fieldtype": "Check",
+   "label": "All Day"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_global_search": 1,
+   "label": "Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Text",
+   "print_width": "300px",
+   "width": "300px"
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Section Break",
+   "label": "Participants",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "fieldname": "event_participants",
+   "fieldtype": "Table MultiSelect",
+   "label": "Event Participants",
+   "options": "Event Participants"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Confirmed\nNot Confirmed\nOpen\nClosed\nCancelled"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.sync_with_google_calendar",
+   "fieldname": "sb_00",
+   "fieldtype": "Section Break",
+   "label": "Google Calendar"
+  },
+  {
+   "fetch_from": "google_calendar.google_calendar_id",
+   "fieldname": "google_calendar_id",
+   "fieldtype": "Data",
+   "label": "Google Calendar ID",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "google_calendar_event_id",
+   "fieldtype": "Data",
+   "label": "Google Calendar Event ID",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sync_with_google_calendar",
+   "fieldtype": "Check",
+   "label": "Sync with Google Calendar"
+  },
+  {
+   "fieldname": "google_calendar",
+   "fieldtype": "Link",
+   "label": "Google Calendar",
+   "options": "Google Calendar"
+  },
+  {
+   "depends_on": "eval:doc.repeat_this_event",
+   "fieldname": "repeat",
+   "fieldtype": "HTML",
+   "label": "Repeat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rrule",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "RRULE"
+  },
+  {
+   "fieldname": "repeat_till",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Repeat Until"
+  },
+  {
+   "fieldname": "sender",
+   "fieldtype": "Data",
+   "label": "Sender",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "depends_on": "eval:doc.published",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "collapsible_depends_on": "eval:doc.published",
+   "depends_on": "eval:doc.event_type!=\"Private\"",
+   "fieldname": "website_section",
+   "fieldtype": "Section Break",
+   "label": "Website"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.published",
+   "fieldname": "portal_print_format",
+   "fieldtype": "Link",
+   "label": "Print format to use for portal view",
+   "options": "Print Format"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.published",
+   "fieldname": "allow_registrations",
+   "fieldtype": "Check",
+   "label": "Allow registrations"
+  },
+  {
+   "default": "<p>Thank you !  You have been successfully registered</p>",
+   "depends_on": "eval:doc.published&&doc.allow_registrations",
+   "fieldname": "success_message",
+   "fieldtype": "HTML Editor",
+   "label": "Registration success message"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.published&&doc.allow_registrations",
+   "fieldname": "allow_cancellations",
+   "fieldtype": "Check",
+   "label": "Allow cancellations"
+  },
+  {
+   "default": "All",
+   "depends_on": "eval:doc.published",
+   "fieldname": "visible_for",
+   "fieldtype": "Select",
+   "label": "Visible for",
+   "options": "All\nRole"
+  },
+  {
+   "depends_on": "eval:doc.published&&doc.visible_for==\"Role\"",
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Role"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.published",
+   "fieldname": "display_public_files",
+   "fieldtype": "Check",
+   "label": "Display public files"
+  }
+ ],
+ "has_web_view": 1,
+ "icon": "fa fa-calendar",
+ "idx": 1,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [
+  {
+   "group": "Registrations",
+   "link_doctype": "Event Registration",
+   "link_fieldname": "event"
+  }
+ ],
+ "modified": "2020-12-31 18:41:12.260579",
+ "modified_by": "Administrator",
+ "module": "Desk",
+ "name": "Event",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sender_field": "sender",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "subject_field": "subject",
+ "title_field": "subject",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

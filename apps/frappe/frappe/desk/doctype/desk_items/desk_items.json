@@ -1,0 +1,52 @@
+{
+ "creation": "2019-05-10 11:55:19.632276",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "widget_type",
+  "widget_name",
+  "widget_width",
+  "widget_height"
+ ],
+ "fields": [
+  {
+   "fieldname": "widget_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Widget Type",
+   "options": "Dashboard Chart\nDashboard Calendar\nDashboard Card",
+   "reqd": 1
+  },
+  {
+   "fieldname": "widget_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Widget Name",
+   "options": "widget_type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "widget_width",
+   "fieldtype": "Percent",
+   "label": "Widget Width",
+   "reqd": 1
+  },
+  {
+   "fieldname": "widget_height",
+   "fieldtype": "Int",
+   "label": "Widget Height",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-05-24 18:04:32.864020",
+ "modified_by": "Administrator",
+ "module": "Desk",
+ "name": "Desk Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "route": "/app/Form/DocType/Desk Items",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

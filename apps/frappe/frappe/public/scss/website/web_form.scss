@@ -1,0 +1,263 @@
+@import "../common/form";
+
+.web-form-wrapper {
+	.form-control {
+		color: var(--text-color);
+	}
+
+	.form-section {
+		.section-head {
+			font-weight: bold;
+			font-size: var(--text-xl);
+			padding: var(--padding-md) 0;
+		}
+	}
+
+	.form-column {
+		padding: 0 var(--padding-md);
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+
+#web-form {
+	padding-bottom: 2rem;
+
+	.form-section {
+		margin: 0
+	}
+
+	.form-section {
+		@include card();
+		margin: 0.8rem 0;
+		.section-head {
+			width: 100%;
+			padding: var(--padding-sm) var(--padding-md);
+			margin: 0;
+			margin-bottom: var(--margin-sm);
+			font-size: var(--text-xl);
+			color: var(--heading-color);
+		}
+		.section-head:first-child {
+			margin-top: var(--margin-sm);
+		}
+	}
+}
+
+.introduction {
+	border-bottom: 1px solid #e1e9f0;
+	padding: 0 0 var(--padding-md) 0;
+	margin-bottom: 15px;
+	.read-mode {
+		background-color: transparent;
+	}
+}
+
+.form-group label {
+	font-weight: normal;
+}
+
+.checkbox .label-area {
+	padding-left: 3px;
+}
+
+.page-header-actions-block .btn-delete {
+	display: none;
+	padding: 3px 10px;
+}
+
+.page-header-actions-block .btn-new {
+	display: inline;
+}
+
+.page-header-actions-block.actions-mode .btn-delete {
+	display: inline;
+}
+
+.page-header-actions-block.actions-mode .btn-new {
+	display: none;
+}
+
+.web-form-page, .web-form-page .section {
+	padding: 20px 0px;
+}
+
+.web-form-grid-row input, .web-form-grid-row select {
+	border: 0px;
+	padding: 0px;
+}
+.web-form-grid-row input:focus, .web-form-grid-row select:focus {
+	box-shadow: none;
+}
+.web-form-grid-row .form-group {
+	margin: 0px;
+}
+
+.list-view-footer {
+	margin: 0.5rem 0;
+}
+
+.comments {
+	margin: 1rem 0;
+}
+
+.slide-progress {
+	/*border-top: 1px solid #d1d8dd;*/
+	margin-top: -10px;
+}
+.slide-progress .fa-fw {
+	vertical-align: middle;
+	margin-right: 9px;
+	padding-left: 2px;
+	cursor: pointer;
+}
+.slide-progress .icon-circle-blank {
+	font-size: 12px;
+}
+.slide-progress .icon-circle {
+	font-size: 14px;
+}
+
+body {
+	display: none;
+}
+
+.modal-title {
+	margin-top: 5px;
+}
+
+.modal-header {
+	padding: 10px 15px;
+}
+
+.form-in-grid .form-section {
+	margin: 0px;
+	padding: 15px;
+}
+
+.form-in-grid {
+	.grid-form-heading .row-actions,
+	.grid-footer-toolbar {
+		display: none !important;
+	}
+}
+
+.form-control {
+	border-width: 1px;
+	border-color: $gray-400;
+	border-style: none none solid;
+}
+
+.form-clickable-section {
+	border-top: 1px solid #d1d8dd;
+	padding: 10px 15px;
+}
+
+.table > tbody > tr > td {
+	 vertical-align: middle;
+}
+
+table {
+	border: 1px solid #ebecf1;
+}
+
+.table > tbody > tr:hover {
+	background-color: rgb(247, 250, 252);
+}
+
+.grid-body .data-row {
+	font-size: inherit;
+}
+
+.like-disabled-input {
+	margin-bottom: 7px;
+	border-radius: 3px;
+	min-height: 30px;
+	font-weight: bold;
+	background-color: #f5f7fa;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+.like-disabled-input.for-description {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+// Checkbox
+/* checkbox */
+input[type="checkbox"] {
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	position: relative;
+	font-size: calc(var(--checkbox-size) - 1px);
+	margin-right: 5px;
+
+	&:before {
+		width: var(--checkbox-size);
+		height: var(--checkbox-size);
+		display: block;
+		text-align: center;
+		line-height: 11px;
+		content: '';
+		visibility: visible;
+		border: 1px solid var(--gray-400);
+		box-sizing: border-box;
+		//box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+		border-radius: 2px;
+		cursor: pointer;
+	}
+
+	&:checked:before {
+		//content: url("data: image/svg+xml;utf8, <svg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 4.00001L2.66667 5.80001L7 1.20001' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+		//background: linear-gradient(180deg, #4AC3F8 -124.51%, #2490EF 100%);
+		content: '\e9c3';
+		font-family: 'unicons';
+		font-size: 1em;
+		color: var(--blue-500);
+		background-color: var(--blue-50);
+		box-shadow: none;
+		border: 1px solid var(--blue-500);
+		cursor: pointer;
+	}
+
+
+	&.disabled-deselected:before {
+		background: #FCFCFD;
+		border: 0.5px solid var(--gray-400);
+		box-sizing: border-box;
+		box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+		border-radius: 2px;
+		content: '';
+		cursor: default;
+	}
+
+	&.disabled-selected:before {
+		//content: url("data: image/svg+xml;utf8, <svg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 3.8l1.667 1.8L7 1' stroke='lightgrey' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'></path></svg>");
+		content: '\e9c3';
+		font-family: 'unicons';
+		color: var(--blue-500);
+		background: $gray-50;
+		box-sizing: border-box;
+		box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+		border-radius: 2px;
+		line-height: 10px;
+		cursor: default;
+	}
+}
+
+// Firefox doesn't support pseudo elements on checkbox
+html.firefox, html.safari {
+	:root {
+		--checkbox-size: 0px;
+	}
+	input[type="checkbox"] {
+		width: var(--base-checkbox-size) !important;
+		height: var(--base-checkbox-size);
+	}
+}

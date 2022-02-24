@@ -1,0 +1,40 @@
+.form-control {
+	border-width: 1px;
+	border-color: var(--gray-400);
+	border-style: none none solid;
+	background-color: $control-bg;
+	color: $text-color;
+	box-shadow: none;
+	border-radius: $border-radius;
+	font-size: var(--text-md);
+	position: relative;
+
+	&::placeholder {
+		color: var(--gray-500);
+	}
+}
+
+.form-control.bold {
+	font-weight: 500;
+}
+
+.like-disabled-input {
+	.for-description {
+		font-weight: normal;
+		font-size: var(--text-sm);
+	}
+	min-height: var(--input-height);
+	margin-bottom: 7px;
+	border-radius: $border-radius;
+	font-weight: 400;
+	padding: 8px 12px;
+	// color: var(--disabled-text-color);
+	cursor: default;
+	background-color: var(--disabled-control-bg);
+}
+
+.head-title {
+	font-size: var(--text-lg);
+	font-weight: 700;
+	color: var(--heading-color);
+}

@@ -1,0 +1,188 @@
+{
+ "creation": "2014-07-17 06:54:20.782907",
+ "doctype": "DocType",
+ "document_type": "System",
+ "field_order": [
+  "pdf_settings",
+  "send_print_as_pdf",
+  "repeat_header_footer",
+  "column_break_4",
+  "pdf_page_size",
+  "view_link_in_email",
+  "with_letterhead",
+  "allow_print_for_draft",
+  "column_break_10",
+  "add_draft_heading",
+  "allow_page_break_inside_tables",
+  "allow_print_for_cancelled",
+  "server_printer",
+  "enable_print_server",
+  "server_ip",
+  "printer_name",
+  "port",
+  "print_style_section",
+  "print_style",
+  "print_style_preview",
+  "section_break_8",
+  "font",
+  "font_size"
+ ],
+ "fields": [
+  {
+   "fieldname": "pdf_settings",
+   "fieldtype": "Section Break",
+   "label": "PDF Settings"
+  },
+  {
+   "default": "1",
+   "description": "Send Email Print Attachments as PDF (Recommended)",
+   "fieldname": "send_print_as_pdf",
+   "fieldtype": "Check",
+   "label": "Send Print as PDF"
+  },
+  {
+   "default": "1",
+   "fieldname": "repeat_header_footer",
+   "fieldtype": "Check",
+   "label": "Repeat Header and Footer in PDF"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "A4",
+   "fieldname": "pdf_page_size",
+   "fieldtype": "Select",
+   "label": "PDF Page Size",
+   "options": "A4\nLetter"
+  },
+  {
+   "fieldname": "view_link_in_email",
+   "fieldtype": "Section Break",
+   "label": "Page Settings"
+  },
+  {
+   "default": "1",
+   "fieldname": "with_letterhead",
+   "fieldtype": "Check",
+   "label": "Print with letterhead"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_print_for_draft",
+   "fieldtype": "Check",
+   "label": "Allow Print for Draft"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "add_draft_heading",
+   "fieldtype": "Check",
+   "label": "Always add \"Draft\" Heading for printing draft documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_page_break_inside_tables",
+   "fieldtype": "Check",
+   "label": "Allow page break inside tables"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_print_for_cancelled",
+   "fieldtype": "Check",
+   "label": "Allow Print for Cancelled"
+  },
+  {
+   "fieldname": "server_printer",
+   "fieldtype": "Section Break",
+   "label": "Print Server"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_print_server",
+   "fieldtype": "Check",
+   "label": "Enable Print Server"
+  },
+  {
+   "default": "localhost",
+   "depends_on": "enable_print_server",
+   "fieldname": "server_ip",
+   "fieldtype": "Data",
+   "label": "Server IP"
+  },
+  {
+   "depends_on": "enable_print_server",
+   "fieldname": "printer_name",
+   "fieldtype": "Select",
+   "label": "Printer Name"
+  },
+  {
+   "default": "631",
+   "depends_on": "enable_print_server",
+   "fieldname": "port",
+   "fieldtype": "Int",
+   "label": "Port"
+  },
+  {
+   "fieldname": "print_style_section",
+   "fieldtype": "Section Break",
+   "label": "Print Style"
+  },
+  {
+   "default": "Modern",
+   "fieldname": "print_style",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Print Style",
+   "options": "Print Style"
+  },
+  {
+   "fieldname": "print_style_preview",
+   "fieldtype": "HTML",
+   "label": "Print Style Preview"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Fonts"
+  },
+  {
+   "default": "Default",
+   "fieldname": "font",
+   "fieldtype": "Select",
+   "label": "Font",
+   "options": "Default\nHelvetica Neue\nArial\nHelvetica\nInter\nVerdana\nMonospace"
+  },
+  {
+   "default": "9",
+   "description": "In points. Default is 9.",
+   "fieldname": "font_size",
+   "fieldtype": "Float",
+   "label": "Font Size"
+  }
+ ],
+ "icon": "fa fa-cog",
+ "issingle": 1,
+ "modified": "2020-10-21 23:42:09.471022",
+ "modified_by": "Administrator",
+ "module": "Printing",
+ "name": "Print Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

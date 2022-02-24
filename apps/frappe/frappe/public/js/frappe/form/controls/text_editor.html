@@ -1,0 +1,63 @@
+<div class="toolbar-container">
+	<span class="ql-formats">
+		<select class="ql-header" data-toggle="tooltip" title="{{ header }}">
+			<option value="1">{{ __("Heading 1") }}</option>
+			<option value="2">{{ __("Heading 2") }}</option>
+			<option value="3">{{ __("Heading 3") }}</option>
+			<option selected="selected">{{ __("Normal") }}</option>
+		</select>
+	</span>
+	<span class="ql-formats">
+			<button class="ql-bold" data-toggle="tooltip" data-placement="bottom" title="{{ bold }}"></button>
+			<button class="ql-italic" data-toggle="tooltip" data-placement="bottom" title="{{ italic }}"></button>
+			<button class="ql-underline" data-toggle="tooltip" title="{{ underline }}"></button>
+	</span>
+	<span class="ql-formats">
+		<button class="ql-blockquote" data-toggle="tooltip" title="{{ blockquote }}"></button>
+		<button class="ql-code-block" data-toggle="tooltip" title="{{ codeblock }}"></button>
+	</span>
+	<span class="ql-formats">
+		<button class="ql-link" data-toggle="tooltip" title="{{ link }}"></button>
+		<button class="ql-image" data-toggle="tooltip" title="{{ image }}"></button>
+	</span>
+	<span class="ql-formats">
+		<button class="ql-list" value="ordered" data-toggle="tooltip" title="{{ orderedlist }}"></button>
+		<button class="ql-list" value="bullet" data-toggle="tooltip" title="{{ bulletlist }}"></button>
+	</span>
+	<span class="ql-formats">
+			<select class="ql-align" data-toggle="tooltip" title="{{ align }}">
+				<option selected="selected">{{ __("Left") }}</option>
+				<option value="center">{{ __("Center") }}</option>
+				<option value="right">{{ __("Right") }}</option>
+				<option value="justify">{{ __("Justify") }}</option>
+			</select>
+	</span>
+	<span class="ql-formats">
+		<button class="ql-indent" value="-1" data-toggle="tooltip" title="{{ indent }}"></button>
+		<button class="ql-indent" value="+1" data-toggle="tooltip" title="{{ indent }}"></button>
+	</span>
+	<span class="ql-formats">
+		<select class="ql-table" data-toggle="tooltip" title="{{ table }}">
+				<option value="insert-table">
+				<option value="insert-row-above">
+				<option value="insert-row-below">
+				<option value="insert-column-right">
+				<option value="insert-column-left">
+				<option value="delete-row">
+				<option value="delete-column">
+				<option value="delete-table">
+			</select>
+	</span>
+	<span class="ql-formats">
+		<button class="ql-clean" data-toggle="tooltip" title="{{ clean }}"></button>
+	</span>
+	{% if showtemplate %}
+	<span class="ql-formats">
+		<button class="ql-template-blot" data-toggle="tooltip" title="{{ templateblot }}"></button>
+	</span>
+	{% endif %}
+
+</div>
+
+
+<div class="editor-container"></div>

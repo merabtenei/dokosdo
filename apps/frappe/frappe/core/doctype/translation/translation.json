@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "hash",
+ "creation": "2016-02-17 12:21:16.175465",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "language",
+  "section_break_4",
+  "source_text",
+  "context",
+  "column_break_6",
+  "translated_text"
+ ],
+ "fields": [
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "in_standard_filter": 1,
+   "label": "Language",
+   "options": "Language",
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "hide_days": 1,
+   "hide_seconds": 1
+  },
+  {
+   "description": "If your data is in HTML, please copy paste the exact HTML code with the tags.",
+   "fieldname": "source_text",
+   "fieldtype": "Code",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Source Text"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break",
+   "hide_days": 1,
+   "hide_seconds": 1
+  },
+  {
+   "fieldname": "translated_text",
+   "fieldtype": "Code",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Translated Text"
+  },
+  {
+   "fieldname": "context",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Context"
+  }
+ ],
+ "links": [],
+ "modified": "2020-08-18 11:50:49.597329",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Translation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "source_text",
+ "track_changes": 1
+}
