@@ -1,0 +1,3 @@
+[console_scripts]
+ofxget = ofxtools.scripts.ofxget:main
+

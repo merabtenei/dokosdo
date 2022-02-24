@@ -1,0 +1,23 @@
+[2021-06-08 19:16:55 +0000] [6394] [INFO] Starting gunicorn 20.0.4
+[2021-06-08 19:16:55 +0000] [6394] [INFO] Listening at: http://127.0.0.1:8000 (6394)
+[2021-06-08 19:16:55 +0000] [6394] [INFO] Using worker: sync
+[2021-06-08 19:16:55 +0000] [6529] [INFO] Booting worker with pid: 6529
+[2021-06-08 19:16:55 +0000] [6530] [INFO] Booting worker with pid: 6530
+[2021-06-08 19:16:57 +0000] [6394] [INFO] Handling signal: term
+[2021-06-08 19:16:57 +0000] [6529] [INFO] Worker exiting (pid: 6529)
+[2021-06-08 19:16:57 +0000] [6530] [INFO] Worker exiting (pid: 6530)
+[2021-06-08 19:16:57 +0000] [6394] [INFO] Shutting down: Master
+[2021-06-08 19:17:01 +0000] [6556] [INFO] Starting gunicorn 20.0.4
+[2021-06-08 19:17:01 +0000] [6556] [INFO] Listening at: http://127.0.0.1:8000 (6556)
+[2021-06-08 19:17:01 +0000] [6556] [INFO] Using worker: sync
+[2021-06-08 19:17:01 +0000] [6600] [INFO] Booting worker with pid: 6600
+[2021-06-08 19:17:01 +0000] [6601] [INFO] Booting worker with pid: 6601
+[2021-06-08 19:30:14 +0000] [6556] [INFO] Handling signal: term
+[2021-06-08 19:30:14 +0000] [6601] [INFO] Worker exiting (pid: 6601)
+[2021-06-08 19:30:14 +0000] [6600] [INFO] Worker exiting (pid: 6600)
+[2021-06-08 19:30:16 +0000] [6556] [INFO] Shutting down: Master
+[2022-02-24 00:41:25 +0000] [1865] [INFO] Starting gunicorn 20.0.4
+[2022-02-24 00:41:25 +0000] [1865] [INFO] Listening at: http://127.0.0.1:8000 (1865)
+[2022-02-24 00:41:25 +0000] [1865] [INFO] Using worker: sync
+[2022-02-24 00:41:25 +0000] [2154] [INFO] Booting worker with pid: 2154
+[2022-02-24 00:41:25 +0000] [2193] [INFO] Booting worker with pid: 2193

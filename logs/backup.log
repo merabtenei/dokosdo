@@ -1,0 +1,8 @@
+Backup Summary for site1.local at 2022-02-24 07:00:06.353794
+Config  : ./site1.local/private/backups/20220224_070004-site1_local-site_config_backup.json 224.0B
+Database: ./site1.local/private/backups/20220224_070004-site1_local-database.sql.gz         1.1MiB
+Backup for Site site1.local has been successfully completed
+Backup Summary for site1.local at 2022-02-24 13:00:04.900750
+Config  : ./site1.local/private/backups/20220224_130002-site1_local-site_config_backup.json 224.0B
+Database: ./site1.local/private/backups/20220224_130002-site1_local-database.sql.gz         1.1MiB
+Backup for Site site1.local has been successfully completed

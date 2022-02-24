@@ -1,0 +1,9 @@
+2021-06-08 19:13:29,947 INFO getting app erpnext
+2021-06-08 19:13:29,966 INFO git clone -q https://gitlab.com/dokos/dokos --branch master --depth 1 --origin upstream erpnext
+2021-06-08 19:13:37,269 INFO installing erpnext
+2021-06-08 19:13:37,269 INFO ./env/bin/pip install -q -U -e ./apps/erpnext 
+2021-06-08 19:14:03,886 INFO bench build --app erpnext
+2021-06-08 19:16:51,270 INFO sudo /usr/bin/supervisorctl reread
+2021-06-08 19:16:51,549 INFO sudo /usr/bin/supervisorctl update
+2021-06-08 19:16:51,763 INFO sudo systemctl reload nginx
+2021-06-08 19:16:56,368 INFO sudo supervisorctl restart dokos-bench-workers: dokos-bench-web:

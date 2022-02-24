@@ -1,0 +1,353 @@
+listening on *: 9000
+listening on *: 9000
+listening on *: 9000
+{ Error: Not Found
+    at Request.callback (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/index.js:706:15)
+    at parser (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  status: 404,
+  response:
+   Response {
+     _events: [Object: null prototype] {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        socket: [Socket],
+        connection: [Socket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'NOT FOUND',
+        client: [Socket],
+        _consuming: false,
+        _dumped: false,
+        req: [ClientRequest],
+        text:
+         '{"exc_type":"DoesNotExistError","_server_messages":"[\\"{\\\\\\"message\\\\\\": \\\\\\"Facture de vente new-sales-invoice-1 introuvable\\\\\\", \\\\\\"indicator\\\\\\": \\\\\\"red\\\\\\", \\\\\\"raise_exception\\\\\\": 1}\\"]"}' },
+     request:
+      Request {
+        _events: [Object: null prototype] {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        _agent: false,
+        _formData: null,
+        method: 'GET',
+        url:
+         'http://178.128.172.244/api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=new-sales-invoice-1',
+        _header: [Object],
+        header: [Object],
+        writable: true,
+        _redirects: 0,
+        _maxRedirects: 5,
+        cookies: '',
+        qs: {},
+        _query: [],
+        qsRaw: [],
+        _redirectList: [],
+        _streamRequest: false,
+        req: [ClientRequest],
+        protocol: 'http:',
+        host: '178.128.172.244',
+        _endCalled: true,
+        _callback: [Function],
+        res: [IncomingMessage],
+        response: [Circular],
+        called: true },
+     req:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Socket],
+        connection: [Socket],
+        _header:
+         'GET /api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=new-sales-invoice-1 HTTP/1.1\r\nHost: 178.128.172.244\r\nAccept-Encoding: gzip, deflate\r\nUser-Agent: node-superagent/3.8.3\r\nContent-Type: application/x-www-form-urlencoded\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        insecureHTTPParser: undefined,
+        path:
+         '/api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=new-sales-invoice-1',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     text:
+      '{"exc_type":"DoesNotExistError","_server_messages":"[\\"{\\\\\\"message\\\\\\": \\\\\\"Facture de vente new-sales-invoice-1 introuvable\\\\\\", \\\\\\"indicator\\\\\\": \\\\\\"red\\\\\\", \\\\\\"raise_exception\\\\\\": 1}\\"]"}',
+     body:
+      { exc_type: 'DoesNotExistError',
+        _server_messages:
+         '["{\\"message\\": \\"Facture de vente new-sales-invoice-1 introuvable\\", \\"indicator\\": \\"red\\", \\"raise_exception\\": 1}"]' },
+     files: undefined,
+     buffered: true,
+     headers:
+      { server: 'nginx',
+        date: 'Thu, 24 Feb 2022 01:01:34 GMT',
+        'content-type': 'application/json',
+        'content-length': '195',
+        connection: 'close',
+        'set-cookie': [Array] },
+     header:
+      { server: 'nginx',
+        date: 'Thu, 24 Feb 2022 01:01:34 GMT',
+        'content-type': 'application/json',
+        'content-length': '195',
+        connection: 'close',
+        'set-cookie': [Array] },
+     statusCode: 404,
+     status: 404,
+     statusType: 4,
+     info: false,
+     ok: false,
+     redirect: false,
+     clientError: true,
+     serverError: false,
+     error:
+      { Error: cannot GET /api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=new-sales-invoice-1 (404)
+          at Response.toError (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/response.js:94:15)
+          at ResponseBase._setStatusProperties (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/response-base.js:123:16)
+          at new Response (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/response.js:41:8)
+          at Request._emitResponse (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/index.js:752:20)
+          at parser (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/index.js:916:38)
+          at IncomingMessage.res.on (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/parsers/json.js:19:7)
+          at IncomingMessage.emit (events.js:203:15)
+          at endReadableNT (_stream_readable.js:1145:12)
+          at process._tickCallback (internal/process/next_tick.js:63:19)
+        status: 404,
+        text:
+         '{"exc_type":"DoesNotExistError","_server_messages":"[\\"{\\\\\\"message\\\\\\": \\\\\\"Facture de vente new-sales-invoice-1 introuvable\\\\\\", \\\\\\"indicator\\\\\\": \\\\\\"red\\\\\\", \\\\\\"raise_exception\\\\\\": 1}\\"]"}',
+        method: 'GET',
+        path:
+         '/api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=new-sales-invoice-1' },
+     created: false,
+     accepted: false,
+     noContent: false,
+     badRequest: false,
+     unauthorized: false,
+     notAcceptable: false,
+     forbidden: false,
+     notFound: true,
+     unprocessableEntity: false,
+     type: 'application/json',
+     links: {},
+     setEncoding: [Function: bound ],
+     redirects: [] } }
+{ Error: Not Found
+    at Request.callback (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/index.js:706:15)
+    at parser (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/index.js:916:18)
+    at IncomingMessage.res.on (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/parsers/json.js:19:7)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  status: 404,
+  response:
+   Response {
+     _events: [Object: null prototype] {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        socket: [Socket],
+        connection: [Socket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'NOT FOUND',
+        client: [Socket],
+        _consuming: false,
+        _dumped: false,
+        req: [ClientRequest],
+        text:
+         '{"exc_type":"DoesNotExistError","_server_messages":"[\\"{\\\\\\"message\\\\\\": \\\\\\"Facture de vente (69f6bdc3ea) introuvable\\\\\\", \\\\\\"indicator\\\\\\": \\\\\\"red\\\\\\", \\\\\\"raise_exception\\\\\\": 1}\\"]"}' },
+     request:
+      Request {
+        _events: [Object: null prototype] {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        _agent: false,
+        _formData: null,
+        method: 'GET',
+        url:
+         'http://178.128.172.244/api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=%2869f6bdc3ea%29',
+        _header: [Object],
+        header: [Object],
+        writable: true,
+        _redirects: 0,
+        _maxRedirects: 5,
+        cookies: '',
+        qs: {},
+        _query: [],
+        qsRaw: [],
+        _redirectList: [],
+        _streamRequest: false,
+        req: [ClientRequest],
+        protocol: 'http:',
+        host: '178.128.172.244',
+        _endCalled: true,
+        _callback: [Function],
+        res: [IncomingMessage],
+        response: [Circular],
+        called: true },
+     req:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Socket],
+        connection: [Socket],
+        _header:
+         'GET /api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=%2869f6bdc3ea%29 HTTP/1.1\r\nHost: 178.128.172.244\r\nAccept-Encoding: gzip, deflate\r\nUser-Agent: node-superagent/3.8.3\r\nContent-Type: application/x-www-form-urlencoded\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        insecureHTTPParser: undefined,
+        path:
+         '/api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=%2869f6bdc3ea%29',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     text:
+      '{"exc_type":"DoesNotExistError","_server_messages":"[\\"{\\\\\\"message\\\\\\": \\\\\\"Facture de vente (69f6bdc3ea) introuvable\\\\\\", \\\\\\"indicator\\\\\\": \\\\\\"red\\\\\\", \\\\\\"raise_exception\\\\\\": 1}\\"]"}',
+     body:
+      { exc_type: 'DoesNotExistError',
+        _server_messages:
+         '["{\\"message\\": \\"Facture de vente (69f6bdc3ea) introuvable\\", \\"indicator\\": \\"red\\", \\"raise_exception\\": 1}"]' },
+     files: undefined,
+     buffered: true,
+     headers:
+      { server: 'nginx',
+        date: 'Thu, 24 Feb 2022 01:29:33 GMT',
+        'content-type': 'application/json',
+        'content-length': '188',
+        connection: 'close',
+        'set-cookie': [Array] },
+     header:
+      { server: 'nginx',
+        date: 'Thu, 24 Feb 2022 01:29:33 GMT',
+        'content-type': 'application/json',
+        'content-length': '188',
+        connection: 'close',
+        'set-cookie': [Array] },
+     statusCode: 404,
+     status: 404,
+     statusType: 4,
+     info: false,
+     ok: false,
+     redirect: false,
+     clientError: true,
+     serverError: false,
+     error:
+      { Error: cannot GET /api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=%2869f6bdc3ea%29 (404)
+          at Response.toError (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/response.js:94:15)
+          at ResponseBase._setStatusProperties (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/response-base.js:123:16)
+          at new Response (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/response.js:41:8)
+          at Request._emitResponse (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/index.js:752:20)
+          at parser (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/index.js:916:38)
+          at IncomingMessage.res.on (/home/dokos/dokos-bench/apps/frappe/node_modules/superagent/lib/node/parsers/json.js:19:7)
+          at IncomingMessage.emit (events.js:203:15)
+          at endReadableNT (_stream_readable.js:1145:12)
+          at process._tickCallback (internal/process/next_tick.js:63:19)
+        status: 404,
+        text:
+         '{"exc_type":"DoesNotExistError","_server_messages":"[\\"{\\\\\\"message\\\\\\": \\\\\\"Facture de vente (69f6bdc3ea) introuvable\\\\\\", \\\\\\"indicator\\\\\\": \\\\\\"red\\\\\\", \\\\\\"raise_exception\\\\\\": 1}\\"]"}',
+        method: 'GET',
+        path:
+         '/api/method/frappe.realtime.can_subscribe_doc?sid=dcbe8d47a8528cbffcf2ef81dad2a5843f7fb26d1905076d488c2ac0&doctype=Sales%20Invoice&docname=%2869f6bdc3ea%29' },
+     created: false,
+     accepted: false,
+     noContent: false,
+     badRequest: false,
+     unauthorized: false,
+     notAcceptable: false,
+     forbidden: false,
+     notFound: true,
+     unprocessableEntity: false,
+     type: 'application/json',
+     links: {},
+     setEncoding: [Function: bound ],
+     redirects: [] } }
